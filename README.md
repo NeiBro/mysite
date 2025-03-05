@@ -6,8 +6,7 @@ This is a **Django 4** project created as part of my portfolio. It contains info
 - **Python 3**  
 - **Django 4**  
 - **HTML, CSS**  
-- **PostgreSQL** (or any other database if used)  
-- **Bootstrap** for responsive design (if included)  
+- **Bootstrap** for responsive design
 
 ## 🎯 Features  
 ✅ Static pages with personal information  
