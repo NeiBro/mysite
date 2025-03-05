@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<section id="projects" class="section">
+  <h2>Мои проекты</h2>
+  <div class="grid">
+    {% for project in projects %}
+    <div class="card">
+      <img src="{% static 'owner/images/'|add:project.image_url %}" alt="{{ project.title }}" />
+      <a href="{{ project.project_url }}">{{ project.title }}</a>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,139 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #0a0a0a;
+  color: #fff;
+}
+nav {
+  background: #111;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(138, 43, 226, 0.5);
+}
+nav a {
+  color: #8a2be2;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: color 0.3s ease-in-out;
+}
+nav a:hover {
+  color: #fff;
+}
+header {
+  padding: 20px;
+  animation: fadeIn 2s ease-in-out;
+}
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #8a2be2;
+  animation: bounceIn 1s ease-in-out;
+}
+.title {
+  font-size: 28px;
+  margin: 5px 0;
+  animation: fadeInUp 1.5s ease-in-out;
+}
+.subtitle {
+  font-size: 16px;
+  color: #b0b0b0;
+  animation: fadeInUp 1.5s ease-in-out;
+}
+.section {
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(138, 43, 226, 0.5);
+  animation: fadeIn 2s ease-in-out;
+}
+.section h2 {
+  margin-bottom: 15px;
+  animation: fadeInUp 1.5s ease-in-out;
+}
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+.card {
+  width: 240px;
+  padding: 10px;
+  background: #111;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(138, 43, 226, 0.5);
+  animation: fadeInUp 1.5s ease-in-out;
+}
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+.card img:hover {
+  transform: scale(1.05);
+}
+.card a {
+  display: block;
+  margin-top: 8px;
+  color: #8a2be2;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+.card a:hover {
+  color: #fff;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceIn {
+  from,
+  20%,
+  40%,
+  60%,
+  80%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  20% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+  40% {
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+  60% {
+    opacity: 1;
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+  80% {
+    transform: scale3d(0.97, 0.97, 0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}
